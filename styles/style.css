@@ -86,6 +86,7 @@ input[type=submit] {
     padding:0 16px; 
     background:rgb(242,242,242); 
     border:1px rgb(242,242,242) solid;
+	border-radius: 3px;
 	margin:11px 2px;
 	color:rgb(117,117,117);
 	font-family: arial,sans-serif;
@@ -97,6 +98,10 @@ input[type=submit] {
 }
 #buttons{
 	margin-top: 20px;
+}
+
+#lucky:hover, #pesquisa:hover {
+	border: 1px solid #ADD8E6;
 }
 
 input[type=text]{

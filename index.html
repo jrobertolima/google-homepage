@@ -7,38 +7,68 @@
 	</head>
 	
 	<body>
-		<div class="conteudo">
+		<div id="container"> 
 			<div id="header">
-				<p>Gmail</p>
-				
-				<p>Images</p>
-				<!-- inserir imagem apps* -->
-
-				<!--Botão de login -->
-				<p><div id="login">
-					<p> <span style="font-weight:bold">Fazer login</span></p>
-				</div>
-				</p>
+				<ul>
+					<li>
+					    <a href="https://mail.google.com/mail/?tab=wm"> Gmail </a>
+					</li>	
+					<li>
+					    <a href="https://www.google.com.br/imghp?hl=pt-BR&tab=wi&ei=-xHxV_3pGISGwQSPy5aQBw&ved=0EKouCBQoAQ" >Images </a>
+					</li>
+					<li>
+						<a id="apps" href="https://www.google.com.br/intl/pt-BR/options/"> <img src="./images/apps.png"> </a>
+					</li>	
+					<li>
+						<a id="signin" href="https://accounts.google.com/ServiceLogin?hl=pt-BR&passive=true&continue=https://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DRAvxV675E6LL8gfI5LSIDw%26gws_rd%3Dssl">Fazer login </a>
+					</li>
+				</ul>	
 			</div>
 			
 			<div id="center">
-				<img src="images\googlelogo_color_272x92dp.png" alt="Logo Google">
-				<form action="#" method="POST" name="pesquisar">
-					<input type="text" name="pesquisa"><br>
-					<input type="submit" value="Pesquisa Google">
-					<input type="submit" value="Estou com sorte">
-				</form>
+				<img id="logo"src="images\googlelogo_color_272x92dp.png" alt="Logo Google">
+					<form action="#" method="POST" name="pesquisar">
+						<div id="inputsearch">
+								<input type="text" name="pesquisa">
+								<a href=""> <img id="mic" src="./images/google-mic-icon.png" alt="Mic"></a>
+								<a href=""> <img id="teclado" src="./images/teclado.png" alt="Teclado"></a> 
+						</div>
+						
+						<div id="buttons">	
+								<input type="submit" value="Pesquisa Google">
+								<input type="submit" value="Estou com sorte">
+						</div>
+						
+					</form>
 			</div>
 			
 			<div id="footer">
-				<p>Publicidade</p>
-				<p>Negócios</p>
-				<p>Sobre</p>
-				<p>Privacidade</p>
-				<p>Termos</p>
-				<p>Configurações</p>		
-				<p>Usar Google.com</p>
-			</div>
+				<ul id="fleft">
+					<li>
+						<a href="https://www.google.com.br/intl/pt-BR/ads/?fg=1">Publicidade </a>
+					</li> 
+					<li>
+						<a href="https://www.google.com.br/services/?fg=1">Negócios </a>
+					</li>
+					<li>
+						<a href="https://www.google.com.br/intl/pt-BR/about.html?fg=1"> Sobre </a>
+					</li>
+				</ul>
+				<ul id="fright">	
+					<li>
+						<a href="https://www.google.com.br/intl/pt-BR/policies/privacy/?fg=1">Privacidade</a>
+					</li>
+					<li>
+						<a href="https://www.google.com.br/intl/pt-BR/policies/terms/?fg=1">Termos</a>
+					</li>
+					<li>
+						<a href="https://www.google.com.br/preferences?hl=pt-BR">Configurações</a>
+					</li>		
+					<li>
+						<a href="https://www.google.com/?gfe_rd=cr&ei=RAvxV675E6LL8gfI5LSIDw&gws_rd=ssl,cr&fg=1">Usar Google.com</a>
+					</li>
+				</ul>
+			</div> 
 		</div>	
 	</body>
 </html>

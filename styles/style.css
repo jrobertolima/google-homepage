@@ -1,31 +1,130 @@
-body {
+html, body {
+	margin: 0;
+	padding: 0;
 	background-color:#fff; 
-	font-family: Arial, sans-serif;
-	font-size: 12px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	list-style-type: none;	
 }
 
-#header p {
+a{
+	color: #666;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: inline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#apps, #signin{
+	cursor: default;
+	text-decoration: none;
+}
+#apps, #mic, #teclado{
+	opacity: 0.85;
+}
+
+#apps:hover, #mic:hover, #teclado:hover {
+	opacity: 1;
+}
+#signin {
+	background-color:#1E90FF;
+	color: white;
+	border-radius: 3px;
+}
+
+#header{
+	height: 30px;
+	margin: 5px;
+	float: right;
+	padding: 10px 28px 1px 1px;	
+}
+
+ul li {
 	display: inline-block;
+	padding-right: 28px;
 }
-.conteudo {
-	border: 0;
+
+#logo {
+	padding-top: 225px;
+	width: 302px;
+	height:105px;
+}
+
+#center {
+	clear: both;
 	text-align: center;
-	display: block;
+	position:relative;
+	margin-top: 198px;
 }
 
-#header {
-/*	position: relative;
-*/	display: inline-block;
+
+#teclado {
+	height: 15px;
+	width: 24px;
+	position:absolute;
+	right:79px;
+	bottom:30px;
+}
+
+#mic {
+	height: 35px;
+	width: 40px;
+	position:absolute;
+	right:35px;
+	bottom:20px;
+}
+
+#inputsearch {
+	display: inline-block;
+	position: relative;
+}
+
+input[type=submit] {
+    padding:0 16px; 
+    background:rgb(242,242,242); 
+    border:1px rgb(242,242,242) solid;
+	margin:11px 2px;
+	color:rgb(117,117,117);
+	font-family: arial,sans-serif;
+	font-size:16px;
+	font-weight: bold;
+	height: 36px;
+	line-height: 27px;
+	text-align: center;
+}
+#buttons{
+	margin-top: 20px;
+}
+
+input[type=text]{
+	width:581px;
+	height: 36px;
+	font-size:16px;
+	border: 1px rgb(217,217,217) solid;
+	margin-top:1px;
+	margin-bottom: 1px;
+	margin-left:12px
+}
+
+#footer {
+	background: #f2f2f2;
+	color: #222;
+	bottom:1px;
 	height: 40px;
-	width: 320px;
-	margin-right: 5px;
-	
+	position: absolute;
+	width: 100%;
+	border-top: 1px solid #e4e4e4;
 }
 
-#login {
-	display:inline;
-	border-radius:5px;
-	background-color:#0000FF;
-	color: #fff;	
+#fleft {
+	margin: 15px 20px 10px 20px;
+	float: left;	
 }
 
+#fright {
+	margin: 15px 15px 10px 15px;
+	float:right;
+}
